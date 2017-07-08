@@ -19,7 +19,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-// $Revision: 7068 $ $Date:: 2017-06-13 #$ $Author: serge $
+// $Revision: 7108 $ $Date:: 2017-07-07 #$ $Author: serge $
 
 #include "periodic_call_gen.h"          // self
 
@@ -64,7 +64,7 @@ void PeriodicCallGen::init(
 
     sched_  = scheduler;
 
-    auto now = std::chrono::system_clock::now();
+    auto now = scheduler::get_now();
 
     scheduler::Time     exec_time   = now + std::chrono::seconds( 1 );
     scheduler::Duration period      = std::chrono::seconds( 1 );

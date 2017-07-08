@@ -19,7 +19,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-// $Revision: 7068 $ $Date:: 2017-06-13 #$ $Author: serge $
+// $Revision: 7092 $ $Date:: 2017-07-06 #$ $Author: serge $
 
 #include <set>
 #include <cstdint>          // uint32_t
