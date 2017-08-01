@@ -19,7 +19,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-// $Revision: 7108 $ $Date:: 2017-07-07 #$ $Author: serge $
+// $Revision: 7469 $ $Date:: 2017-08-01 #$ $Author: serge $
 
 #include "periodic_call_gen.h"          // self
 
@@ -53,7 +53,8 @@ PeriodicCallGen::~PeriodicCallGen()
     {
         std::string error_str;
 
-        sched_->delete_job( & error_str, job_id_ );
+        if( sched_ )
+            sched_->delete_job( & error_str, job_id_ );
     }
 }
 
