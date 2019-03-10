@@ -19,13 +19,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-// $Revision: 7469 $ $Date:: 2017-08-01 #$ $Author: serge $
+// $Revision: 10610 $ $Date:: 2019-03-10 #$ $Author: serge $
 
 #include "periodic_call_gen.h"          // self
 
 #include <functional>                   // std::bind
 
-#include "utils/assert.h"               // ASSERT
+#include "utils/utils_assert.h"               // ASSERT
 #include "utils/mutex_helper.h"         // MUTEX_SCOPE_LOCK
 #include "scheduler/i_scheduler.h"      // scheduler::IScheduler
 #include "scheduler/periodic_job_aux.h" // create_and_insert_periodic_job
